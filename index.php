@@ -1,4 +1,12 @@
 <?php
+/**
+ * @package OptimalCMS
+ * @author Shoaiyb Sysa
+ * @see https://optimalcms.github.io
+ * @license MIT
+ */
+
+
 $file = __DIR__ . '/config/site.json';
 $json = file_get_contents($file);
 $site = json_decode($json);
