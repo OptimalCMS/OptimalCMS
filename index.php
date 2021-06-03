@@ -8,11 +8,13 @@
 
 
 define( 'ABSPATH', __DIR__.'/' );
+define( 'SYSPATH', ABSPATH.'system/' );
+define( 'CONFPATH', SYSPATH.'config/' );
 
 class oCMS {
   function site()
   {
-    $file = ABSPATH . '/system/config/site.json';
+    $location = ABSPATH . '
     $json = file_get_contents($file);
     $site = json_decode($json);
   }
@@ -35,5 +37,5 @@ class oCMS {
     }
     require_once $location . '/theme.php';
   }
-  
+}
   
