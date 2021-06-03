@@ -1,0 +1,10 @@
+{
+  "title": "OptimalCMS",
+  "name": "OptimalCMS",
+  "description": "Optimal site powered by OptimalCMS",
+  "url": "https://optimalcms.github.io",
+  "baseurl": "/",
+  "theme": "default",
+  "home": "home"
+}
+
