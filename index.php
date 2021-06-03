@@ -14,6 +14,7 @@ define( 'CONFPATH', SYSPATH.'config/' );
 function loadConfigs()
 {
 	$location = CONFPATH .'*';
+	
 	$json = file_get_contents($file);
 	$site = json_decode($json);
 }
