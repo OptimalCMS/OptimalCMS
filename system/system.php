@@ -11,17 +11,16 @@ define( 'ABSPATH', __DIR__.'/' );
 define( 'SYSPATH', ABSPATH.'system/' );
 define( 'CONFPATH', SYSPATH.'config/' );
 
-function loadConfigs()
+function siteConfig()
 {
-	$location = CONFPATH .'*';
-	
-	$json = file_get_contents($file);
+	$config = CONFPATH . 'site.json';
+	$json = file_get_contents($config);
 	$site = json_decode($json);
 }
 
 function loadPlugins()
 {
-	$plugins = ABSPATH . '/plugins';
+	$plugins = ABSPATH . 'plugins';
 	foreach (glob($plugins . '/*', GLOB_ONLYDIR) as $dir) {
 		if (file_exists($dir . '/' . basename($dir) . '.php')) {
 			include $dir . '/' . basename($dir) . '.php';
@@ -31,7 +30,7 @@ function loadPlugins()
 
 function loadTheme()
 {
-	$location = ABSPATH . '/themes/' . $this->get('config', 'theme');
+	$location = ABSPATH . 'themes/' . $this->get('config', 'theme');
 	if (file_exists($location . '/functions.php')) {
 		require_once $location . '/functions.php';
 	}
