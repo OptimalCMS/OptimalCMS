@@ -8,6 +8,5 @@
   "url": "https://optimalcms.github.io",
   "baseurl": "/",
   "theme": "default",
-  "home": "home",
-  "footer": "&copy; copyright 2021"
+  "home": "home"
 }
