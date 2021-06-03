@@ -4,6 +4,7 @@
   "description": "Optimal site powered by OptimalCMS",
   "charset": "utf-8",
   "locale": "en",
+  "email": "admin@example.com",
   "url": "https://optimalcms.github.io",
   "baseurl": "/",
   "theme": "default",
