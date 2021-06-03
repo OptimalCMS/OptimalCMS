@@ -14,7 +14,7 @@ define( 'CONFPATH', SYSPATH.'config/' );
 class oCMS {
   function site()
   {
-    $location = ABSPATH . '
+    $location = CONFPATH .'site.json';
     $json = file_get_contents($file);
     $site = json_decode($json);
   }
