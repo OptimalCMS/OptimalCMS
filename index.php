@@ -9,11 +9,14 @@
 
 define( 'ABSPATH', __DIR__.'/' );
 
-$file = ABSPATH . '/system/config/site.json';
-$json = file_get_contents($file);
-$site = json_decode($json);
+
 
 class oCMS {
+	
+	$file = ABSPATH . '/system/config/site.json';
+	$json = file_get_contents($file);
+	$site = json_decode($json);
+	
 	function loadPlugins()
 	{
 		$plugins = ABSPATH . '/plugins';
