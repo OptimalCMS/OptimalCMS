@@ -11,9 +11,10 @@ define( 'ABSPATH', __DIR__.'/' );
 define( 'SYSPATH', ABSPATH.'system/' );
 define( 'CONFPATH', SYSPATH.'config/' );
 
-function site()
+function loadConfigs()
 {
-	$location = CONFPATH .'site.json';
+	$location = CONFPATH .'*';
+	
 	$json = file_get_contents($file);
 	$site = json_decode($json);
 }
