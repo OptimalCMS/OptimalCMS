@@ -2,6 +2,8 @@
   "title": "OptimalCMS",
   "name": "OptimalCMS",
   "description": "Optimal site powered by OptimalCMS",
+  "charset": "utf-8",
+  "locale": "en",
   "url": "https://optimalcms.github.io",
   "baseurl": "/",
   "theme": "default",
