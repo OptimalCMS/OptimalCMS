@@ -18,6 +18,16 @@ function siteConfig()
 	$site = json_decode($json);
 }
 
+function siteHead()
+{
+	
+}
+
+function siteEnd()
+{
+	
+}
+
 function loadPlugins()
 {
 	$plugins = ABSPATH . 'plugins';
