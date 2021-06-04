@@ -1,3 +1,6 @@
 {
-  
+  "title": "Home",
+  "slug": "/",
+  "description": "Homepage description",
+  "content": "<p>This is the homepage.</p>"
 }
