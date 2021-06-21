@@ -30,6 +30,7 @@ function siteEnd()
 
 function loadPlugins()
 {
+	
 	$plugins = ABSPATH . 'plugins';
 	foreach (glob($plugins . '/*', GLOB_ONLYDIR) as $dir) {
 		if (file_exists($dir . '/' . basename($dir) . '.php')) {
@@ -48,6 +49,7 @@ function loadTheme()
 }
 
 
-
+loadPlugins();
+loadTheme();
 
 ?>
