@@ -1,5 +1,5 @@
 {
-  "slogan": "Home",
+  "name": "OptimalCMS",
   "title": "OptimalCMS",
   "description": "Simple, Powerful, Optimal & Optimised site powered by OptimalCMS",
   "charset": "utf-8",
@@ -8,5 +8,6 @@
   "url": "https://optimalcms.github.io",
   "baseurl": "/",
   "theme": "default",
-  "home": "home"
+  "home": "home",
+  "footer": "&copy; copyright 2021 | $site->title"
 }
