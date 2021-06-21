@@ -6,7 +6,6 @@
  * @license MIT
  */
 
-
 define( 'ABSPATH', __DIR__.'/' );
 define( 'SYSPATH', ABSPATH.'system/' );
 define( 'CONFPATH', SYSPATH.'config/' );
@@ -20,17 +19,21 @@ function siteConfig()
 
 function siteHead()
 {
-	
+
 }
 
 function siteEnd()
+{
+
+}
+
+function loadPage()
 {
 	
 }
 
 function loadPlugins()
 {
-	
 	$plugins = ABSPATH . 'plugins';
 	foreach (glob($plugins . '/*', GLOB_ONLYDIR) as $dir) {
 		if (file_exists($dir . '/' . basename($dir) . '.php')) {
@@ -41,13 +44,13 @@ function loadPlugins()
 
 function loadTheme()
 {
-	$location = ABSPATH . 'themes/' . $this->get('config', 'theme');
+        $config = siteConfig();
+	$location = ABSPATH . 'themes/' . $config->theme;
 	if (file_exists($location . '/functions.php')) {
 		require_once $location . '/functions.php';
 	}
 	require_once $location . '/theme.php';
 }
-
 
 loadPlugins();
 loadTheme();
