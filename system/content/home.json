@@ -2,5 +2,5 @@
   "title": "Home",
   "slug": "/",
   "description": "Homepage description",
-  "content": "<p>This is the homepage.</p>"
+  "content": "This is the homepage content written in **markdown**."
 }
