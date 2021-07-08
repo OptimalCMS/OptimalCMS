@@ -1,24 +1,16 @@
 <!DOCTYPE html>
-<html lang="<?= site->locale ?>">
+<html lang="<?= $site->locale ?>">
 <head>
-  <meta charset="<?= site->charset ?>">
+  <meta charset="<?= $site->charset ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= page->title ?> | <?= site->title ?></title>
-  <meta name="description" content="<?= page->description ?>">
-  <?= siteHead() ?>
+  <title><?= $page->title ?> | <?= $site->title ?></title>
+  <meta name="description" content="<?= $page->description ?>">
+  <?= execute_action("head") ?>
 </head>
 <body>
-  <div class="main">
-    <?= page->content ?>
-  </div>
-  <footer class="footer">
-    <p>
-      <?= block->footer ?>
-    </p>
-    <p class="powered">
-      Proudly Powered by <a href="https://optimalcms.github.io/" target="_blank">OptimalCMS</a>
-    </p>
-  </footer>
-  <?= siteEnd() ?>
+
+  
+  
+<?= execute_action("script") ?>
 </body>
 </html>
