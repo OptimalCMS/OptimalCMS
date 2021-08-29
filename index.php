@@ -12,7 +12,6 @@
 define( 'OptimalCMS', TRUE );
 define( 'SITE_DIR', __DIR__ . '/site/' );
 define( 'THEME_DIR', __DIR__ . '/themes/' );
-define( 'PLUGIN_DIR', __DIR__ . '/plugins/' );
 /**
  * @require Core
  * @require Functions
