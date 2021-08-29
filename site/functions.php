@@ -2,14 +2,13 @@
 if(!defined('OptimalCMS')) {
   die('OptimalCMS');
 }
-require SITE_DIR . 'core.php';
 
 $OptimalCMS = new OptimalCMS();
 
 function add_action($where, $callback, $priority = 50) {
   global $OptimalCMS;
   if(isset($OptimalCMS)) {
-    $OptimalCMS->add_action($where,$callback,$priority);
+    $OptimalCMS->add_action($where, $callback, $priority);
   }
 }
 
