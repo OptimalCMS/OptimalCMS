@@ -2,6 +2,7 @@
 if(!defined('OptimalCMS')) {
   die('OptimalCMS');
 }
+require SITE_DIR . 'core.php';
 
 $OptimalCMS = new OptimalCMS();
 
