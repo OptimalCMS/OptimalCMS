@@ -26,7 +26,7 @@ function execute_action($where, $args = array()) {
   }
 }
 
-require SITE_DIR . 'db.php';
+require SITE_DIR . 'database.php';
 require THEME_DIR . $site->theme . '/index.php';
 if(file_exists(THEME_DIR . $site->theme . '/functions.php')) {
 require_once(THEME_DIR . $site->theme . '/functions.php');
