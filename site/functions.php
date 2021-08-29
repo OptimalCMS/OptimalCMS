@@ -1,25 +1,28 @@
 <?php
+if(!defined('OptimalCMS')) {
+  die('OptimalCMS');
+}
 
 $OptimalCMS = new OptimalCMS();
 
-function add_action($where,$callback,$priority=50) {
+function add_action($where, $callback, $priority = 50) {
   global $OptimalCMS;
   if(isset($OptimalCMS)) {
     $OptimalCMS->add_action($where,$callback,$priority);
   }
 }
 
-function remove_action($where,$callback) {
+function remove_action($where, $callback) {
   global $OptimalCMS;
   if(isset($OptimalCMS)) {
-    $OptimalCMS->remove_action($where,$callback);
+    $OptimalCMS->remove_action($where, $callback);
   }
 }
 
-function execute_action($where,$args=array()) {
+function execute_action($where, $args = array()) {
   global $OptimalCMS;
   if(isset($OptimalCMS)) {
-    $OptimalCMS->execute($where,$args);
+    $OptimalCMS->execute($where, $args);
   }
 }
 
