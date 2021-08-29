@@ -1,16 +1,16 @@
 {
   "menu": {
     "home": {
-      "name": "HOME",
+      "name": "Home",
       "url": "/"
     },
     "blog": {
-      "name": "BLOG",
-      "url": "#/blog/"
+      "name": "Features",
+      "url": "#features"
     },
     "contact": {
-      "name": "CONTACT",
-      "url": "#/contact/"
+      "name": "Download",
+      "url": "#download"
     }
   },
   "footer": "&copy; copyright 2021",
@@ -25,8 +25,8 @@
     },
     "email": {
       "name": "email",
-      "url": "mailto:mail@sysa.ml"
+      "url": "optimalcms@sysa.ml"
     }
   },
-  "poweredby": "Proudly Powered By OptimalCMS"
+  "poweredby": "Optimized Site Proudly Powered By OptimalCMS"
 }
