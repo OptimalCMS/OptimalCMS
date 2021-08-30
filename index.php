@@ -2,7 +2,7 @@
 /**
  * @package OptimalCMS
  * @author Shoaiyb Sysa
- * @see https://optimalcms.github.io
+ * @see https://cms.sysa.ml
  * @license MIT
 */
 
@@ -12,10 +12,10 @@
 define( 'OptimalCMS', TRUE );
 define( 'SITE_DIR', __DIR__ . '/site/' );
 define( 'THEME_DIR', __DIR__ . '/themes/' );
+
 /**
  * @require Core
  * @require Functions
 */
-
 require SITE_DIR . 'core.php';
 require SITE_DIR . 'functions.php';
