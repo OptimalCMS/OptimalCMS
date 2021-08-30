@@ -24,7 +24,7 @@ class OptimalCMS {
   }
 
   function execute($where, $args = array()) {
-    if(isset($this->hooks[$where])&&is_array($this->hooks[$where])) {
+    if(isset($this->hooks[$where]) && is_array($this->hooks[$where])) {
       arsort($this->hooks[$where]);
       foreach($this->hooks[$where] as $callback=>$priority) {
         call_user_func_array($callback, $args);
