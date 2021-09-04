@@ -2,8 +2,10 @@
   "lang": "en",
   "charset": "utf-8",
   "title": "OptimalCMS",
-  "description": "Open Source PHP CMS to build optimized one page site at ease",
-  "url": "http://localhost:8080",
+  "subtitle": "Open Source CMS to build optimized onepage site at ease",
+  "keywords": "Keywords, For, SEO",
+  "description": "Create your own One-Page Website in seconds",
+  "url": "http://localhost:1234",
   "theme": "default",
   "version": "v1.0.0"
 }
