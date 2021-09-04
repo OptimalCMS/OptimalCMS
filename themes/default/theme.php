@@ -14,6 +14,7 @@ if(!defined('OptimalCMS')) {
     <title><?= $site->title ?> - <?= $site->subtitle ?></title>
     <meta name="keywords" content="<?= $site->keywords ?>">
     <meta name="description" content="<?= $site->description ?>">
+    <meta name="generator" content="OptimalCMS <?= $site->version ?>">
     <link rel="stylesheet" href="<?= $site->url . '/themes/' . $site->theme . '/css/bootstrap.min.css' ?>">
     <link rel="stylesheet" href="<?= $site->url . '/themes/' . $site->theme . '/css/animate.min.css' ?>">
     <link rel="stylesheet" href="<?= $site->url . '/themes/' . $site->theme . '/css/et-line-font.css' ?>">
