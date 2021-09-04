@@ -153,5 +153,6 @@ if(!defined('OptimalCMS')) {
     <script src="<?= $site->url . '/themes/' . $site->theme . '/js/smoothscroll.js' ?>"></script>
     <script src="<?= $site->url . '/themes/' . $site->theme . '/js/custom.js' ?>"></script>
     <?php execute_action("script") ?>
+    <!-- <?= $widgets->poweredby ?> -->
   </body>
 </html>
